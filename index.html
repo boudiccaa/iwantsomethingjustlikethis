@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apology Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div id="outside">
+        <img id="outside-pic" src="cat1.webp" alt="A cute cat">
+        <h2 id="outside-title">I have a very important question to ask</h2>
+        <p>
+            <button onclick="open_card()">Click to open</button>
+        </p>
+    </div>
+
+    <div id="inside" style="display: none;">
+        <h2 id="inside-title">Will you please forgive me?</h2>
+        <img id="inside-pic" src="girl.webp" alt="A girl asking for forgiveness">
+        <p id="message">
+            Well, I am running out of ways to apologize <br>
+            but here's a little poem I wrote
+            <br><br>
+            but before that, you must answer correctly
+            <br>
+        </p>
+        <p>
+            <a href="page1.html" class="button">Ready for Adventure</a>
+        </p>
+        <p>
+            <button onclick="close_card()">Click to close</button>
+        </p>
+    </div>
+</body>                                                                                                 
+</html>

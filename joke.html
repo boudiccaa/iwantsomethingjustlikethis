@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yeah</title>
+    <link rel="stylesheet" href="game-style.css">
+    <style>
+        .hidden-content {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="content" class="container hidden-content">
+        <h2>Okay, sorry sorry, here goes I promise:</h2>
+        <a href="yesofc.html" class="button">to love</a>
+    </div>
+
+    <!-- Audio Element -->
+    <audio id="background-sound" src="rickroll.mp3"></audio>
+
+    <!-- JavaScript to Play Sound and Show Content After Delay -->
+    <script>
+        window.addEventListener('load', function() {
+            // Play the sound immediately
+            document.getElementById('background-sound').play();
+
+            // Show the content after 5 seconds (5000 milliseconds)
+            setTimeout(function() {
+                document.getElementById('content').classList.remove('hidden-content');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

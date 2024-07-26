@@ -1,0 +1,72 @@
+/* Basic reset for better cross-browser consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Cute and playful font */
+    background-color: #e6e6fa; /* Light lavender background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden; /* Prevents body from scrolling */
+}
+
+.container {
+    text-align: center;
+    background-color: #fff0f5; /* Lavender blush background */
+    padding: 30px;
+    border: 2px solid #db7093; /* Pale violet red border */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-height: 90vh; /* Ensures container fits within viewport */
+    overflow-y: auto; /* Adds vertical scrollbar if needed */
+}
+
+h2 {
+    font-size: 20px;
+    color: #db7093; /* Pale violet red color */
+    margin-bottom: 20px;
+}
+
+h2 span {
+    color: #c71585; /* Medium violet red color for emphasis */
+}
+
+a.button, a.button:visited {
+    display: inline-block;
+    background-color: #db7093; /* Pale violet red background */
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+a.button:hover {
+    background-color: #c71585; /* Darker pink on hover */
+}
+
+.message-box {
+    background-color: #ffe4e1; /* Light pink background */
+    border: 2px solid #db7093; /* Pale violet red border */
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.message-box img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.message-box p {
+    margin-bottom: 20px; /* Add space below paragraphs */
+}
